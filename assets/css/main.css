@@ -7,5 +7,9 @@ body {
 }
 
 div.full-height{
-	height: 100vh;
+  height: 100vh;
+}
+
+a.inherit-colour {
+  color: inherit;
 }
