@@ -13,3 +13,8 @@ div.full-height{
 a.inherit-colour {
   color: inherit;
 }
+
+div.post-container {
+  margin-left: 20em;
+  margin-right: 20em;
+}

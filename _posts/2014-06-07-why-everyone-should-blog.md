@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "I WANDERED LONELY AS A CLOUD"
 ---
 
