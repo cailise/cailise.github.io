@@ -1,0 +1,1 @@
+_BY {{ page.author }}_ ON {{ page.date | date_to_string }}

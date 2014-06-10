@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "I Wandered Lonely as a Cloud"
+author: William Wordsworth
 ---
 
 # {{ page.title }}
 
-_by William Wordsworth_
+{% include post-date.md %}
 
 I wandered lonely as a cloud
 That floats on high o'er vales and hills,
