@@ -1,53 +1,24 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
-    <link href="{{ site.url }}/assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <title>{{ page.title }}</title>
+    	<link href="{{ site.url }}/assets/img/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/foundation.css" />
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
-    <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+    	<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css" />
+	    <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
+  	</head>
+	<body>
+		<div class="site-header">
+			<a class="site-title" href="{{ site.url }}/">
+				<img src="{{ site.url }}/assets/img/favicon.ico"> <strong>Blog of Cailise</strong>
+			</a>&nbsp; 
+			<a href="{{ site.url }}/">Posts</a> | <a href="{{ site.url }}/">Contact Me</a>
+		</div>
 
-    <div class="full-height off-canvas-wrap" data-offcanvas>
-      <div class="full-height inner-wrap">
-        <nav class="tab-bar">
-          <section class="left-small">
-            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-          </section>
-          <section class="middle tab-bar-section">
-            <h1 class="title"><a class="inherit-colour" href="{{ site.url }}/">Caitlin's Blog</a></h1>
-          </section>
-        </nav>
-
-        <aside class="full-height left-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li><label>Pages</label></li>
-            <li><a href="{{ site.url }}/about">About Me</a></li>
-
-            <li><label>Posts</label></li>
-            {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </aside>
-
-        <section class="main-section">
-          {{ content }}
-        </section>
-
-        <a class="exit-off-canvas"></a>
-
-      </div>
-    </div>
-
-    <script src="{{ site.url }}/assets/js/vendor/jquery.js"></script>
-    <script src="{{ site.url }}/assets/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+		<section class="main-section">
+		  {{ content }}
+		</section>
+  	</body>
 </html>

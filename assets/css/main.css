@@ -3,7 +3,13 @@ html {
 }
 
 body {
+    background: url(../img/butterfly-bg-op.png) center repeat-y;
+    background-size: 100% auto;
+}
+
+body {
   min-height: 100%;
+  margin: 0;
 }
 
 div.full-height{
@@ -14,7 +20,42 @@ a.inherit-colour {
   color: inherit;
 }
 
+div.site-header {
+	padding-left: 5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+.site-header a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.site-header a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a.site-title:hover {
+  text-decoration: none;
+}
+
 div.post-container {
-  margin-left: 20em;
-  margin-right: 20em;
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-right: 15em;
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.post-container h1 {
+  margin-top: 0;
 }
